@@ -128,7 +128,11 @@ final class PlayViewModel: ObservableObject {
     private func triggerBotMove() async {
         guard !isGameOver else { return }
         isThinking = true
-        if let move = await bot.bestMove(in: gameState) {
+        // Offload computation to a background task so the UI remains responsive
+        let move = await Task.detached(priority: .userInitiated) { [bot = self.bot, state = self.gameState] in
+            bot.bestMoveSync(in: state)
+        }.value
+        if let move {
             gameState.makeMove(move)
             lastMoveSquares = [move.from, move.to]
         }
