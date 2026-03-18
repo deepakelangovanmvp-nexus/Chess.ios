@@ -1,0 +1,102 @@
+[
+  {
+    "id": "puzzle-mate-in-1-001",
+    "fen": "6k1/5ppp/8/8/8/8/8/R5K1 w - - 0 1",
+    "sideToMove": "w",
+    "solution": ["a1a8"],
+    "theme": "Back Rank Mate",
+    "difficulty": "Easy",
+    "title": "Back Rank Mate #1",
+    "explanation": "Ra8# delivers checkmate on the back rank. The black king is trapped by its own pawns on f7, g7, and h7."
+  },
+  {
+    "id": "puzzle-mate-in-1-002",
+    "fen": "r5k1/5ppp/8/8/8/8/8/3R2K1 w - - 0 1",
+    "sideToMove": "w",
+    "solution": ["d1d8"],
+    "theme": "Back Rank Mate",
+    "difficulty": "Easy",
+    "title": "Back Rank Mate #2",
+    "explanation": "Rd8# is checkmate. The rook controls the entire 8th rank and the king has no escape."
+  },
+  {
+    "id": "puzzle-fork-001",
+    "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+    "sideToMove": "w",
+    "solution": ["f3g5"],
+    "theme": "Fork",
+    "difficulty": "Easy",
+    "title": "Knight Fork",
+    "explanation": "Ng5 attacks both the undefended bishop on f7 (forking the king!) creating a devastating threat."
+  },
+  {
+    "id": "puzzle-pin-001",
+    "fen": "rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/5NP1/PP2PP1P/RNBQKB1R w KQkq - 0 5",
+    "sideToMove": "w",
+    "solution": ["f1g2"],
+    "theme": "Pin",
+    "difficulty": "Easy",
+    "title": "Develop and Pin",
+    "explanation": "Bg2 develops the bishop to a great square, preparing to control the long diagonal and potentially pin pieces."
+  },
+  {
+    "id": "puzzle-mate-in-2-001",
+    "fen": "r1bqkb1r/pppp1Qpp/2n2n2/4p3/2B1P3/8/PPPP1PPP/RNB1K1NR b KQkq - 0 4",
+    "sideToMove": "b",
+    "solution": ["g8e7", "f7e8"],
+    "theme": "Scholar's Mate Defense",
+    "difficulty": "Medium",
+    "title": "Escape the Scholars Mate",
+    "explanation": "After Qxf7+, Black must block with Ke7, but then Qe8# is checkmate. This is the famous Scholar's Mate!"
+  },
+  {
+    "id": "puzzle-tactic-001",
+    "fen": "8/8/8/3k4/8/3K4/8/3R4 w - - 0 1",
+    "sideToMove": "w",
+    "solution": ["d1d5"],
+    "theme": "King and Rook Endgame",
+    "difficulty": "Easy",
+    "title": "King and Rook vs King",
+    "explanation": "Rd5+ checks the black king! The white king and rook work together to drive the enemy king to the edge."
+  },
+  {
+    "id": "puzzle-discovered-001",
+    "fen": "r3k3/p4ppp/2p5/8/4B3/8/PPP2PPP/R3K3 w Qq - 0 1",
+    "sideToMove": "w",
+    "solution": ["e4c6"],
+    "theme": "Discovered Attack",
+    "difficulty": "Medium",
+    "title": "Bishop Capture",
+    "explanation": "Bxc6 wins a pawn. The bishop captures the pawn on c6, gaining material advantage."
+  },
+  {
+    "id": "puzzle-endgame-001",
+    "fen": "8/8/8/8/8/4k3/4p3/4K3 b - - 0 1",
+    "sideToMove": "b",
+    "solution": ["e2e1q"],
+    "theme": "Promotion",
+    "difficulty": "Easy",
+    "title": "Queen Promotion",
+    "explanation": "e1=Q! The pawn promotes to a queen, immediately threatening checkmate and winning the game."
+  },
+  {
+    "id": "puzzle-pin-absolute-001",
+    "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2N2N2/PPPP1PPP/R1BQK2R w KQkq - 6 4",
+    "sideToMove": "w",
+    "solution": ["f3e5"],
+    "theme": "Fork",
+    "difficulty": "Medium",
+    "title": "Central Knight Fork",
+    "explanation": "Nxe5! White wins a pawn. The knight on e5 is protected by the bishop on c4 and attacks the bishop on c6."
+  },
+  {
+    "id": "puzzle-mate-in-1-003",
+    "fen": "6k1/pp3ppp/8/8/8/8/PP3PPP/3R2K1 w - - 0 1",
+    "sideToMove": "w",
+    "solution": ["d1d8"],
+    "theme": "Back Rank Mate",
+    "difficulty": "Easy",
+    "title": "Rook to 8th Rank",
+    "explanation": "Rd8# is checkmate! The rook slides to the 8th rank and the black king has no escape due to the pawns on f7, g7, and h7."
+  }
+]
