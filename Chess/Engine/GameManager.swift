@@ -279,6 +279,24 @@ class GameManager: ObservableObject {
         gameState = .resigned(currentTurn)
     }
 
+    func stopSession() {
+        gameState = .stopped
+    }
+
+    func retry() {
+        guard gameState.isGameOver else { return }
+        let mode = gameMode
+        let difficulty = aiDifficulty
+        let color = aiColor
+        newGame()
+        gameMode = mode
+        aiDifficulty = difficulty
+        aiColor = color
+        if mode == .humanVsAI && aiColor == .white {
+            triggerAI()
+        }
+    }
+
     func isKingInCheck(at position: Position) -> Bool {
         guard let piece = board.piece(at: position), piece.type == .king else { return false }
         if case .check(let color) = gameState, color == piece.color { return true }
@@ -297,6 +315,8 @@ class GameManager: ObservableObject {
             return "Draw — Stalemate"
         case .resigned(let color):
             return "\(color.displayName) Resigned. \(color.opposite.displayName) Wins!"
+        case .stopped:
+            return "Session Stopped."
         }
     }
 }

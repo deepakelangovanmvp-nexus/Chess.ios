@@ -169,11 +169,12 @@ enum GameState: Equatable {
     case checkmate(winner: PieceColor)
     case stalemate
     case resigned(PieceColor)
+    case stopped
 
     var isGameOver: Bool {
         switch self {
         case .playing, .check: return false
-        default: return true
+        case .checkmate, .stalemate, .resigned, .stopped: return true
         }
     }
 }

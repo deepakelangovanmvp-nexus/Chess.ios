@@ -4,6 +4,7 @@ struct ControlsView: View {
     @ObservedObject var game: GameManager
     @State private var showNewGameSheet = false
     @State private var showResignAlert = false
+    @State private var showStopAlert = false
 
     var body: some View {
         VStack(spacing: 10) {
@@ -32,16 +33,29 @@ struct ControlsView: View {
             }
 
             if !game.gameState.isGameOver {
-                Button(action: { showResignAlert = true }) {
-                    Label("Resign", systemImage: "flag.fill")
-                        .font(.system(size: 13, weight: .medium, design: .rounded))
-                        .foregroundColor(.red.opacity(0.9))
-                        .frame(maxWidth: .infinity)
-                        .padding(.vertical, 8)
-                        .background(ChessTheme.cardBackground)
-                        .cornerRadius(10)
+                HStack(spacing: 10) {
+                    Button(action: { showResignAlert = true }) {
+                        Label("Resign", systemImage: "flag.fill")
+                            .font(.system(size: 13, weight: .medium, design: .rounded))
+                            .foregroundColor(.red.opacity(0.9))
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 8)
+                            .background(ChessTheme.cardBackground)
+                            .cornerRadius(10)
+                    }
+                    .disabled(game.isThinking)
+
+                    Button(action: { showStopAlert = true }) {
+                        Label("Stop Session", systemImage: "stop.circle.fill")
+                            .font(.system(size: 13, weight: .medium, design: .rounded))
+                            .foregroundColor(.orange.opacity(0.9))
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 8)
+                            .background(ChessTheme.cardBackground)
+                            .cornerRadius(10)
+                    }
+                    .disabled(game.isThinking)
                 }
-                .disabled(game.isThinking)
 
                 Toggle("Coach Mode", isOn: $game.isCoachModeEnabled)
                     .font(.system(size: 13, weight: .medium, design: .rounded))
@@ -51,6 +65,16 @@ struct ControlsView: View {
                     .padding(.vertical, 8)
                     .background(ChessTheme.cardBackground)
                     .cornerRadius(10)
+            } else {
+                Button(action: { game.retry() }) {
+                    Label("Retry", systemImage: "arrow.clockwise.circle.fill")
+                        .font(.system(size: 14, weight: .semibold, design: .rounded))
+                        .foregroundColor(.white)
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 10)
+                        .background(ChessTheme.accent)
+                        .cornerRadius(10)
+                }
             }
         }
         .sheet(isPresented: $showNewGameSheet) {
@@ -61,6 +85,12 @@ struct ControlsView: View {
             Button("Cancel", role: .cancel) { }
         } message: {
             Text("Are you sure you want to resign?")
+        }
+        .alert("Stop Session?", isPresented: $showStopAlert) {
+            Button("Stop", role: .destructive) { game.stopSession() }
+            Button("Cancel", role: .cancel) { }
+        } message: {
+            Text("End the current session without declaring a winner?")
         }
     }
 }
