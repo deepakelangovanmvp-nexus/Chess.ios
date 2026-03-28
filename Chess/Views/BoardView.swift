@@ -45,6 +45,10 @@ struct BoardView: View {
                 RoundedRectangle(cornerRadius: 4)
                     .stroke(ChessTheme.boardBorder, lineWidth: ChessTheme.boardBorderWidth)
             )
+            // Illuminated glass-and-marble board glow — cyan from beneath, purple haze depth
+            .shadow(color: Color.cyan.opacity(0.18), radius: 28, x: 0, y: 0)
+            .shadow(color: Color(red: 0.35, green: 0.20, blue: 0.55).opacity(0.22), radius: 50, x: 0, y: 12)
+            .shadow(color: Color.black.opacity(0.60), radius: 10, x: 0, y: 6)
             .frame(width: boardSize, height: boardSize)
         }
         .aspectRatio(1, contentMode: .fit)

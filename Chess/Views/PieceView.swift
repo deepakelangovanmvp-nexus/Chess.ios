@@ -7,38 +7,74 @@ struct PieceView: View {
     var body: some View {
         HeroIconView(piece: piece)
             .frame(width: size, height: size)
-            .shadow(color: piece.color == .white ? .cyan.opacity(0.3) : .red.opacity(0.3), radius: 4, x: 0, y: 2)
-            .shadow(color: .black.opacity(0.4), radius: 2, x: 1, y: 2)
+            .shadow(color: piece.color == .white ? .cyan.opacity(0.55) : .red.opacity(0.55), radius: 8, x: 0, y: 0)
+            .shadow(color: piece.color == .white ? .cyan.opacity(0.25) : .yellow.opacity(0.30), radius: 16, x: 0, y: 2)
+            .shadow(color: .black.opacity(0.5), radius: 3, x: 1, y: 3)
     }
 }
 
 struct HeroIconView: View {
     let piece: Piece
-    
+
+    /// Marble base gradient — pristine white marble for Marvel pieces
+    private var marbleBase: LinearGradient {
+        LinearGradient(
+            colors: [Color(white: 0.94), Color(white: 0.76)],
+            startPoint: .topLeading, endPoint: .bottomTrailing
+        )
+    }
+
+    /// Obsidian base gradient — dark shadowy obsidian for DC pieces
+    private var obsidianBase: LinearGradient {
+        LinearGradient(
+            colors: [Color(red: 0.18, green: 0.17, blue: 0.22),
+                     Color(red: 0.06, green: 0.06, blue: 0.10)],
+            startPoint: .topLeading, endPoint: .bottomTrailing
+        )
+    }
+
     var body: some View {
         GeometryReader { geo in
             let w = geo.size.width
-            
+
             ZStack {
+                // Round chess-piece base — marble (Marvel) or obsidian (DC)
+                Circle()
+                    .fill(piece.color == .white ? AnyShapeStyle(marbleBase) : AnyShapeStyle(obsidianBase))
+
+                // Hero icon symbol
                 if piece.color == .white {
                     switch piece.type {
-                    case .king: IronManTarget()
-                    case .queen: CosmicStar(color: .yellow)
-                    case .rook: GammaSymbol(color: .green)
+                    case .king:   IronManTarget()
+                    case .queen:  CosmicStar(color: .yellow)
+                    case .rook:   GammaSymbol(color: .green)
                     case .bishop: EyeOfAgamotto()
                     case .knight: Mjolnir()
-                    case .pawn: SpiderWeb()
+                    case .pawn:   SpiderWeb()
                     }
                 } else {
                     switch piece.type {
-                    case .king: BatSymbol()
-                    case .queen: WonderWomanLogo()
-                    case .rook: SupermanShield()
+                    case .king:   BatSymbol()
+                    case .queen:  WonderWomanLogo()
+                    case .rook:   SupermanShield()
                     case .bishop: LanternRing()
                     case .knight: FlashBolt()
-                    case .pawn: Trident()
+                    case .pawn:   Trident()
                     }
                 }
+
+                // Energy accent ring — cyan for Marvel, red+yellow for DC
+                Circle()
+                    .strokeBorder(
+                        piece.color == .white
+                            ? AnyShapeStyle(LinearGradient(
+                                colors: [.cyan, Color.white.opacity(0.7), .cyan.opacity(0.4)],
+                                startPoint: .topLeading, endPoint: .bottomTrailing))
+                            : AnyShapeStyle(LinearGradient(
+                                colors: [.red, .yellow.opacity(0.8), .red.opacity(0.4)],
+                                startPoint: .topLeading, endPoint: .bottomTrailing)),
+                        lineWidth: max(w * 0.07, 2)
+                    )
             }
             .frame(width: w, height: w)
         }

@@ -32,6 +32,15 @@ struct SquareView: View {
                 }
             }
 
+            // Subtle top-lighting gloss on light squares — illuminated glass surface effect
+            if isLight && !isSelected && !isKingInCheck {
+                LinearGradient(
+                    colors: [Color.white.opacity(0.14), Color.clear],
+                    startPoint: .top, endPoint: .center
+                )
+                .allowsHitTesting(false)
+            }
+
             if let piece = piece {
                 PieceView(piece: piece, size: squareSize * 0.72)
                     .transition(.scale)
