@@ -33,7 +33,7 @@ struct SquareView: View {
             }
 
             if let piece = piece {
-                PieceView(piece: piece, size: squareSize * 0.72)
+                PieceView(piece: piece, size: squareSize * 0.95)
                     .transition(.scale)
             }
 
