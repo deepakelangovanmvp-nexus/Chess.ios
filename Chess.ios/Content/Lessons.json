@@ -1,0 +1,174 @@
+[
+  {
+    "id": "lesson-pieces-intro",
+    "title": "Meet the Pieces",
+    "description": "Learn how each chess piece moves and captures.",
+    "category": "Basics",
+    "difficulty": "Beginner",
+    "estimatedMinutes": 5,
+    "sections": [
+      {
+        "id": "intro",
+        "title": "The Chess Board",
+        "body": "Chess is played on an 8×8 board with 64 squares. Each player starts with 16 pieces: 1 king, 1 queen, 2 rooks, 2 bishops, 2 knights, and 8 pawns.\n\nFiles (columns) are labeled a–h from left to right. Ranks (rows) are numbered 1–8 from White's side.",
+        "boardFEN": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "checkpoint": null
+      },
+      {
+        "id": "pawn",
+        "title": "The Pawn",
+        "body": "Pawns move forward one square (or two from their starting rank). They capture diagonally. When a pawn reaches the last rank, it promotes to any piece (usually a queen).",
+        "boardFEN": "8/8/8/8/8/8/4P3/8 w - - 0 1",
+        "checkpoint": null
+      },
+      {
+        "id": "knight",
+        "title": "The Knight",
+        "body": "The knight moves in an L-shape: two squares in one direction and one square perpendicular. It is the only piece that can jump over other pieces!",
+        "boardFEN": "8/8/8/8/4N3/8/8/8 w - - 0 1",
+        "checkpoint": null
+      },
+      {
+        "id": "bishop",
+        "title": "The Bishop",
+        "body": "Bishops move diagonally any number of squares. Each bishop stays on its own color throughout the game.",
+        "boardFEN": "8/8/8/8/4B3/8/8/8 w - - 0 1",
+        "checkpoint": null
+      },
+      {
+        "id": "rook",
+        "title": "The Rook",
+        "body": "Rooks move horizontally or vertically any number of squares. They are powerful in open files and on the 7th rank.",
+        "boardFEN": "8/8/8/8/4R3/8/8/8 w - - 0 1",
+        "checkpoint": null
+      },
+      {
+        "id": "queen",
+        "title": "The Queen",
+        "body": "The queen is the most powerful piece! It combines the moves of the rook and bishop: any number of squares horizontally, vertically, or diagonally.",
+        "boardFEN": "8/8/8/8/4Q3/8/8/8 w - - 0 1",
+        "checkpoint": null
+      },
+      {
+        "id": "king",
+        "title": "The King",
+        "body": "The king moves one square in any direction. The goal of chess is to checkmate the opponent's king — put it in a position where it is under attack and cannot escape.",
+        "boardFEN": "8/8/8/8/4K3/8/8/8 w - - 0 1",
+        "checkpoint": null
+      }
+    ]
+  },
+  {
+    "id": "lesson-check-checkmate",
+    "title": "Check & Checkmate",
+    "description": "Understand how to give check, escape check, and deliver checkmate.",
+    "category": "Basics",
+    "difficulty": "Beginner",
+    "estimatedMinutes": 8,
+    "sections": [
+      {
+        "id": "what-is-check",
+        "title": "What is Check?",
+        "body": "When a king is attacked by an opponent's piece, it is in check. The player in check must get out of check immediately.\n\nThere are three ways to escape check:\n1. Move the king to a safe square.\n2. Block the attack with another piece.\n3. Capture the attacking piece.",
+        "boardFEN": "4k3/8/8/8/8/8/4R3/4K3 b - - 0 1",
+        "checkpoint": null
+      },
+      {
+        "id": "checkpoint-escape",
+        "title": "Escape the Check",
+        "body": "The black king is in check from the white rook on e2. Find a safe square for the black king.",
+        "boardFEN": "4k3/8/8/8/8/8/4R3/4K3 b - - 0 1",
+        "checkpoint": {
+          "fen": "4k3/8/8/8/8/8/4R3/4K3 b - - 0 1",
+          "sideToMove": "b",
+          "correctMoves": ["e8d7", "e8f8", "e8d8"],
+          "explanation": "The king can step to d7, d8, or f8 to escape the rook's check on the e-file."
+        }
+      },
+      {
+        "id": "what-is-checkmate",
+        "title": "What is Checkmate?",
+        "body": "Checkmate occurs when a king is in check AND has no legal move to escape. The player who delivers checkmate wins the game immediately!",
+        "boardFEN": "6k1/5ppp/8/8/8/8/8/R5K1 w - - 0 1",
+        "checkpoint": null
+      },
+      {
+        "id": "back-rank-mate",
+        "title": "Back-Rank Checkmate",
+        "body": "One of the most common mating patterns is the back-rank mate. The rook delivers checkmate on the 8th rank because the king is trapped by its own pawns.",
+        "boardFEN": "6k1/5ppp/8/8/8/8/8/R5K1 w - - 0 1",
+        "checkpoint": {
+          "fen": "6k1/5ppp/8/8/8/8/8/R5K1 w - - 0 1",
+          "sideToMove": "w",
+          "correctMoves": ["a1a8"],
+          "explanation": "Ra8# is checkmate! The king on g8 is trapped by its own pawns and has nowhere to escape."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lesson-tactics-fork",
+    "title": "Tactics: The Fork",
+    "description": "Learn how to attack two pieces at once with a fork.",
+    "category": "Tactics",
+    "difficulty": "Beginner",
+    "estimatedMinutes": 6,
+    "sections": [
+      {
+        "id": "fork-intro",
+        "title": "What is a Fork?",
+        "body": "A fork is a tactic where one piece attacks two or more enemy pieces simultaneously. The opponent can usually only save one of the attacked pieces.\n\nKnights are famous for their forking ability because of their unusual L-shaped movement.",
+        "boardFEN": "8/8/8/3q4/8/4N3/8/3K4 w - - 0 1",
+        "checkpoint": null
+      },
+      {
+        "id": "knight-fork",
+        "title": "Knight Fork",
+        "body": "White's knight can jump to a square that attacks Black's king and rook at the same time — a royal fork! Black must move the king, and White wins the rook for free.",
+        "boardFEN": "1r3k2/8/8/4N3/8/8/8/4K3 w - - 0 1",
+        "checkpoint": {
+          "fen": "1r3k2/8/8/4N3/8/8/8/4K3 w - - 0 1",
+          "sideToMove": "w",
+          "correctMoves": ["e5d7"],
+          "explanation": "Nd7! forks the black king on f8 and the rook on b8. Black must move the king, so White wins the rook next move."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lesson-opening-principles",
+    "title": "Opening Principles",
+    "description": "Learn the key principles for a strong chess opening.",
+    "category": "Strategy",
+    "difficulty": "Beginner",
+    "estimatedMinutes": 7,
+    "sections": [
+      {
+        "id": "center-control",
+        "title": "Control the Center",
+        "body": "The four central squares (d4, d5, e4, e5) are the most important squares on the board. Controlling the center gives your pieces more space and mobility.\n\nThe classic way to start is by moving a center pawn: 1.e4 or 1.d4.",
+        "boardFEN": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq e3 0 1",
+        "checkpoint": null
+      },
+      {
+        "id": "develop-pieces",
+        "title": "Develop Your Pieces",
+        "body": "In the opening, try to move each piece only once and get all your pieces to active squares. Knights and bishops should be developed before moving the queen.\n\nGoal: by move 5-6, have both knights and bishops developed and be ready to castle.",
+        "boardFEN": "rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 2",
+        "checkpoint": null
+      },
+      {
+        "id": "king-safety",
+        "title": "Keep Your King Safe",
+        "body": "Castle early to tuck your king away safely behind pawns. An exposed king in the center is a target for attacks.\n\nCastling kingside (short) is usually safer and faster than castling queenside.",
+        "boardFEN": "rnbq1rk1/pppp1ppp/5n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQ - 4 4",
+        "checkpoint": {
+          "fen": "rnbq1rk1/pppp1ppp/5n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQ - 4 4",
+          "sideToMove": "w",
+          "correctMoves": ["e1g1"],
+          "explanation": "Castle kingside (O-O)! White's king moves to g1 and the rook jumps to f1, keeping the king safe behind the f, g, and h pawns."
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B0A1234567890ABCDEF0200 = {isa = PBXBuildFile; fileRef = 8B0A1234567890ABCDEF0100; };
+		8B0A1234567890ABCDEF0201 = {isa = PBXBuildFile; fileRef = 8B0A1234567890ABCDEF0101; };
+		8B0A1234567890ABCDEF0210 = {isa = PBXBuildFile; fileRef = 8B0A1234567890ABCDEF0110; };
+		8B0A1234567890ABCDEF0211 = {isa = PBXBuildFile; fileRef = 8B0A1234567890ABCDEF0111; };
+		8B0A1234567890ABCDEF0212 = {isa = PBXBuildFile; fileRef = 8B0A1234567890ABCDEF0112; };
+		8B0A1234567890ABCDEF0213 = {isa = PBXBuildFile; fileRef = 8B0A1234567890ABCDEF0113; };
+		8B0A1234567890ABCDEF0214 = {isa = PBXBuildFile; fileRef = 8B0A1234567890ABCDEF0114; };
+		8B0A1234567890ABCDEF0215 = {isa = PBXBuildFile; fileRef = 8B0A1234567890ABCDEF0115; };
+		8B0A1234567890ABCDEF0216 = {isa = PBXBuildFile; fileRef = 8B0A1234567890ABCDEF0116; };
+		8B0A1234567890ABCDEF0220 = {isa = PBXBuildFile; fileRef = 8B0A1234567890ABCDEF0120; };
+		8B0A1234567890ABCDEF0230 = {isa = PBXBuildFile; fileRef = 8B0A1234567890ABCDEF0130; };
+		8B0A1234567890ABCDEF0231 = {isa = PBXBuildFile; fileRef = 8B0A1234567890ABCDEF0131; };
+		8B0A1234567890ABCDEF0232 = {isa = PBXBuildFile; fileRef = 8B0A1234567890ABCDEF0132; };
+		8B0A1234567890ABCDEF0233 = {isa = PBXBuildFile; fileRef = 8B0A1234567890ABCDEF0133; };
+		8B0A1234567890ABCDEF0240 = {isa = PBXBuildFile; fileRef = 8B0A1234567890ABCDEF0140; };
+		8B0A1234567890ABCDEF0250 = {isa = PBXBuildFile; fileRef = 8B0A1234567890ABCDEF0150; };
+		8B0A1234567890ABCDEF0260 = {isa = PBXBuildFile; fileRef = 8B0A1234567890ABCDEF0160; };
+		8B0A1234567890ABCDEF0241 = {isa = PBXBuildFile; fileRef = 8B0A1234567890ABCDEF0141; };
+		8B0A1234567890ABCDEF0242 = {isa = PBXBuildFile; fileRef = 8B0A1234567890ABCDEF0142; };
+		8B0A1234567890ABCDEF0261 = {isa = PBXBuildFile; fileRef = 8B0A1234567890ABCDEF0161; };
+		8B0A1234567890ABCDEF0270 = {isa = PBXBuildFile; fileRef = 8B0A1234567890ABCDEF0170; };
+		8B0A1234567890ABCDEF0271 = {isa = PBXBuildFile; fileRef = 8B0A1234567890ABCDEF0171; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8B0A1234567890ABCDEF0100 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Chess_iosApp.swift"; sourceTree = "<group>"; };
+		8B0A1234567890ABCDEF0101 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView.swift"; sourceTree = "<group>"; };
+		8B0A1234567890ABCDEF0110 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Piece.swift"; sourceTree = "<group>"; };
+		8B0A1234567890ABCDEF0111 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Move.swift"; sourceTree = "<group>"; };
+		8B0A1234567890ABCDEF0112 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Board.swift"; sourceTree = "<group>"; };
+		8B0A1234567890ABCDEF0113 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FENParser.swift"; sourceTree = "<group>"; };
+		8B0A1234567890ABCDEF0114 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoveGenerator.swift"; sourceTree = "<group>"; };
+		8B0A1234567890ABCDEF0115 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameState.swift"; sourceTree = "<group>"; };
+		8B0A1234567890ABCDEF0116 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChessBot.swift"; sourceTree = "<group>"; };
+		8B0A1234567890ABCDEF0120 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BoardView.swift"; sourceTree = "<group>"; };
+		8B0A1234567890ABCDEF0130 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LearnView.swift"; sourceTree = "<group>"; };
+		8B0A1234567890ABCDEF0131 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PuzzlesView.swift"; sourceTree = "<group>"; };
+		8B0A1234567890ABCDEF0132 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlayView.swift"; sourceTree = "<group>"; };
+		8B0A1234567890ABCDEF0133 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProgressView.swift"; sourceTree = "<group>"; };
+		8B0A1234567890ABCDEF0140 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentModels.swift"; sourceTree = "<group>"; };
+		8B0A1234567890ABCDEF0141 = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Lessons.json"; sourceTree = "<group>"; };
+		8B0A1234567890ABCDEF0142 = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Puzzles.json"; sourceTree = "<group>"; };
+		8B0A1234567890ABCDEF0150 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProgressStore.swift"; sourceTree = "<group>"; };
+		8B0A1234567890ABCDEF0160 = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Assets.xcassets"; sourceTree = "<group>"; };
+		8B0A1234567890ABCDEF0161 = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8B0A1234567890ABCDEF0170 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChessCoreTests.swift"; sourceTree = "<group>"; };
+		8B0A1234567890ABCDEF0171 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FENParserTests.swift"; sourceTree = "<group>"; };
+		8B0A1234567890ABCDEF0006 = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chess.ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B0A1234567890ABCDEF0007 = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Chess.iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B0A1234567890ABCDEF0023 = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B0A1234567890ABCDEF0024 = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B0A1234567890ABCDEF0002 = {
+			isa = PBXGroup;
+			children = (
+				8B0A1234567890ABCDEF0030,
+				8B0A1234567890ABCDEF0031,
+				8B0A1234567890ABCDEF0032,
+				8B0A1234567890ABCDEF0037,
+				8B0A1234567890ABCDEF0038,
+				8B0A1234567890ABCDEF0100,
+				8B0A1234567890ABCDEF0101,
+				8B0A1234567890ABCDEF0160,
+				8B0A1234567890ABCDEF0039,
+				8B0A1234567890ABCDEF0040,
+				8B0A1234567890ABCDEF0003,
+			);
+			path = "Chess.ios";
+			sourceTree = "<group>";
+		};
+		8B0A1234567890ABCDEF0003 = {
+			isa = PBXGroup;
+			children = (
+				8B0A1234567890ABCDEF0006,
+				8B0A1234567890ABCDEF0007,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B0A1234567890ABCDEF0030 = {
+			isa = PBXGroup;
+			children = (
+				8B0A1234567890ABCDEF0110,
+				8B0A1234567890ABCDEF0111,
+				8B0A1234567890ABCDEF0112,
+				8B0A1234567890ABCDEF0113,
+				8B0A1234567890ABCDEF0114,
+				8B0A1234567890ABCDEF0115,
+				8B0A1234567890ABCDEF0116,
+			);
+			path = ChessCore;
+			sourceTree = "<group>";
+		};
+		8B0A1234567890ABCDEF0031 = {
+			isa = PBXGroup;
+			children = (
+				8B0A1234567890ABCDEF0120,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		8B0A1234567890ABCDEF0032 = {
+			isa = PBXGroup;
+			children = (
+				8B0A1234567890ABCDEF0033,
+				8B0A1234567890ABCDEF0034,
+				8B0A1234567890ABCDEF0035,
+				8B0A1234567890ABCDEF0036,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		8B0A1234567890ABCDEF0033 = {
+			isa = PBXGroup;
+			children = (
+				8B0A1234567890ABCDEF0130,
+			);
+			path = Learn;
+			sourceTree = "<group>";
+		};
+		8B0A1234567890ABCDEF0034 = {
+			isa = PBXGroup;
+			children = (
+				8B0A1234567890ABCDEF0131,
+			);
+			path = Puzzles;
+			sourceTree = "<group>";
+		};
+		8B0A1234567890ABCDEF0035 = {
+			isa = PBXGroup;
+			children = (
+				8B0A1234567890ABCDEF0132,
+			);
+			path = Play;
+			sourceTree = "<group>";
+		};
+		8B0A1234567890ABCDEF0036 = {
+			isa = PBXGroup;
+			children = (
+				8B0A1234567890ABCDEF0133,
+			);
+			path = Progress;
+			sourceTree = "<group>";
+		};
+		8B0A1234567890ABCDEF0037 = {
+			isa = PBXGroup;
+			children = (
+				8B0A1234567890ABCDEF0140,
+				8B0A1234567890ABCDEF0141,
+				8B0A1234567890ABCDEF0142,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		8B0A1234567890ABCDEF0038 = {
+			isa = PBXGroup;
+			children = (
+				8B0A1234567890ABCDEF0150,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		8B0A1234567890ABCDEF0039 = {
+			isa = PBXGroup;
+			children = (
+				8B0A1234567890ABCDEF0161,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8B0A1234567890ABCDEF0040 = {
+			isa = PBXGroup;
+			children = (
+				8B0A1234567890ABCDEF0170,
+				8B0A1234567890ABCDEF0171,
+			);
+			path = Chess.iosTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8B0A1234567890ABCDEF0004 = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B0A1234567890ABCDEF0016;
+			buildPhases = (
+				8B0A1234567890ABCDEF0020,
+				8B0A1234567890ABCDEF0023,
+				8B0A1234567890ABCDEF0021,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Chess.ios";
+			packageProductDependencies = (
+			);
+			productName = "Chess.ios";
+			productReference = 8B0A1234567890ABCDEF0006;
+			productType = "com.apple.product-type.application";
+		};
+		8B0A1234567890ABCDEF0005 = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B0A1234567890ABCDEF0017;
+			buildPhases = (
+				8B0A1234567890ABCDEF0022,
+				8B0A1234567890ABCDEF0024,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Chess.iosTests";
+			productName = "Chess.iosTests";
+			productReference = 8B0A1234567890ABCDEF0007;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B0A1234567890ABCDEF0001 = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					8B0A1234567890ABCDEF0004 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					8B0A1234567890ABCDEF0005 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 8B0A1234567890ABCDEF0004;
+					};
+				};
+			};
+			buildConfigurationList = 8B0A1234567890ABCDEF0018;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8B0A1234567890ABCDEF0002;
+			packageReferences = (
+			);
+			productRefGroup = 8B0A1234567890ABCDEF0003;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B0A1234567890ABCDEF0004,
+				8B0A1234567890ABCDEF0005,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B0A1234567890ABCDEF0021 = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B0A1234567890ABCDEF0260,
+				8B0A1234567890ABCDEF0241,
+				8B0A1234567890ABCDEF0242,
+				8B0A1234567890ABCDEF0261,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B0A1234567890ABCDEF0020 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B0A1234567890ABCDEF0200,
+				8B0A1234567890ABCDEF0201,
+				8B0A1234567890ABCDEF0210,
+				8B0A1234567890ABCDEF0211,
+				8B0A1234567890ABCDEF0212,
+				8B0A1234567890ABCDEF0213,
+				8B0A1234567890ABCDEF0214,
+				8B0A1234567890ABCDEF0215,
+				8B0A1234567890ABCDEF0216,
+				8B0A1234567890ABCDEF0220,
+				8B0A1234567890ABCDEF0230,
+				8B0A1234567890ABCDEF0231,
+				8B0A1234567890ABCDEF0232,
+				8B0A1234567890ABCDEF0233,
+				8B0A1234567890ABCDEF0240,
+				8B0A1234567890ABCDEF0250,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B0A1234567890ABCDEF0022 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B0A1234567890ABCDEF0270,
+				8B0A1234567890ABCDEF0271,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8B0A1234567890ABCDEF0014 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSET_CATALOG_COMPILER_OPTIMIZATION = space;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+			};
+			name = Debug;
+		};
+		8B0A1234567890ABCDEF0015 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSET_CATALOG_COMPILER_OPTIMIZATION = space;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8B0A1234567890ABCDEF0010 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Chess.ios/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableDescription = "Chess Teaching App";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MACOS_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chess.ios.app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+			};
+			name = Debug;
+		};
+		8B0A1234567890ABCDEF0011 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETS_GROUP = Assets;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Chess.ios/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableDescription = "Chess Teaching App";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MACOS_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chess.ios.app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+			};
+			name = Release;
+		};
+		8B0A1234567890ABCDEF0012 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/Frameworks",
+				);
+				MACOS_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chess.ios.app.tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chess.ios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Chess.ios";
+			};
+			name = Debug;
+		};
+		8B0A1234567890ABCDEF0013 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/Frameworks",
+				);
+				MACOS_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chess.ios.app.tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chess.ios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Chess.ios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B0A1234567890ABCDEF0018 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B0A1234567890ABCDEF0014,
+				8B0A1234567890ABCDEF0015,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B0A1234567890ABCDEF0016 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B0A1234567890ABCDEF0010,
+				8B0A1234567890ABCDEF0011,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B0A1234567890ABCDEF0017 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B0A1234567890ABCDEF0012,
+				8B0A1234567890ABCDEF0013,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8B0A1234567890ABCDEF0001;
+}
